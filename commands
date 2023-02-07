@@ -1,0 +1,149 @@
+docker run - Run a command in a new container
+Example: docker run ubuntu echo "Hello from Docker"
+
+docker start - Start one or more stopped containers
+Example: docker start my_container
+
+docker stop - Stop one or more running containers
+Example: docker stop my_container
+
+docker rm - Remove one or more containers
+Example: docker rm my_container
+
+docker ps - List containers
+Example: docker ps
+
+docker inspect - Inspect the details of one or more containers or images
+Example: docker inspect my_container
+
+docker logs - Fetch the logs of a container
+Example: docker logs my_container
+
+docker exec - Run a command in a running container
+Example: docker exec -it my_container bash
+
+docker build - Build an image from a Dockerfile
+Example: docker build -t my_image .
+
+docker pull - Pull an image or a repository from a registry
+Example: docker pull ubuntu
+
+docker push - Push an image or a repository to a registry
+Example: docker push my_image
+
+docker images - List images
+Example: docker images
+
+docker rmi - Remove one or more images
+Example: docker rmi my_image
+
+docker tag - Tag an image into a repository
+Example: docker tag my_image my_repository/my_image:latest
+
+docker login - Log in to a Docker registry
+Example: docker login
+
+docker network - Manage Docker networks
+Example: docker network create my_network
+
+docker volume - Manage Docker volumes
+Example: docker volume create my_volume
+
+docker run --name - Assign a name to a container
+Example: docker run --name my_container ubuntu
+
+docker run -d - Run a container in the background
+Example: docker run -d ubuntu sleep 1000
+
+docker run -p - Map a container's port to host port
+Example: docker run -p 80:80 nginx
+
+docker run -v - Mount a host directory as a data volume
+Example: docker run -v /data:/data ubuntu
+
+docker run --link - Link a container to another container
+Example: docker run --link db_container:db ubuntu
+
+docker run --env - Set environment variables
+Example: docker run --env MY_VAR=value ubuntu
+
+docker run --rm - Automatically remove the container when it exits
+Example: docker run --rm ubuntu echo "Hello from Docker"
+
+docker run --network - Connect a container to a network
+Example: docker run --network my_network ubuntu
+
+docker run --mount - Mount a volume
+Example: docker run --mount type=bind,src=my_volume,dst=/data ubuntu
+
+docker run --cpu-quota - Limit the CPU resources available to a container
+Example: docker run --cpu-quota=50000 ubuntu
+
+docker run --cpuset-cpus - Assign CPU cores to a container
+Example: docker run --cpuset-cpus="0-3" ubuntu
+
+docker run --memory - Limit the memory available to a container
+Example: docker run --memory=512m ubuntu
+
+docker run --memory-swap - Limit the swap space available to a container
+Example: docker run --memory-swap=1024m ubuntu
+
+docker run --read-only - Run a container with read-only file system
+Example: docker run --read-only ubuntu
+
+docker run --security-opt - Set security options for a container
+Example: docker run --security-opt no-new-privileges ubuntu
+
+docker run --ulimit - Set ulimits for a container
+Example: docker run --ulimit nproc=1024 ubuntu
+
+docker run --oom-kill-disable - Disable OOM killer for a container
+Example: docker run --oom-kill-disable ubuntu
+
+docker run --init - Run an init inside the container
+Example: docker run --init ubuntu
+
+docker run --cap-add - Add capabilities to a container
+Example: docker run --cap-add SYS_ADMIN ubuntu
+
+docker run --cap-drop - Drop capabilities from a container
+Example: docker run --cap-drop CHOWN ubuntu
+
+docker run --device - Add a host device to a container
+Example: docker run --device /dev/sda:/dev/xvda ubuntu
+
+docker run --privileged - Give extended privileges to a container
+Example: docker run --privileged ubuntu
+
+docker run --user - Run a command as a specific user
+Example: docker run --user 1000 ubuntu
+
+docker run --cidfile - Write the container ID to a file
+Example: docker run --cidfile cidfile ubuntu
+
+docker run --entrypoint - Override the default ENTRYPOINT command
+Example: docker run --entrypoint /bin/sh ubuntu
+
+docker run --name - Assign a name to a container
+Example: docker run --name my_container ubuntu
+
+docker run -e - Set environment variables
+Example: docker run -e MY_VAR=value ubuntu
+
+docker run --label - Apply metadata to a container
+Example: docker run --label my_label=value ubuntu
+
+docker run --hostname - Set the hostname for a container
+Example: docker run --hostname my_host ubuntu
+
+docker run --add-host - Add an entry to the container's /etc/hosts file
+Example: docker run --add-host my_host:127.0.0.1 ubuntu
+
+docker run --dns - Set custom DNS servers for a container
+Example: docker run --dns 8.8.8.8 ubuntu
+
+docker run --dns-search - Set custom DNS search domains for a container
+Example: docker run --dns-search example.com ubuntu
+
+docker run --network - Connect a container to a network
+Example: docker run --network my_network ubuntu
